@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@300&family=League+Gothic&family=Zen+Kurenaido&display=swap');
+
+/* font-family: 'Dela Gothic One', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'League Gothic', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main {
+margin: 0;
+padding: 0;
+}
+
+body{  
+  color: #fff;
+  background-color: #091111;
+}
+
+
+           /* header */
+header {
+display: flex;
+background-color: #252017;
+background-image: url(wallp.jpg);
+}
+.header__logo {
+  height: 57px;
+  padding: 1px 30px 0px 10px;
+}
+
+
+header nav {
+  width: 100%-40px;
+  margin-left: 150px;
+  justify-content: space-around;
+ list-style-image: none;
+
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+li {
+  padding: 10px;
+  font-size: 24px;
+  font-family: "Inconsolata";
+  list-style-type: none; 
+background-color: #091111; 
+color: #cccccc;
+padding: 15px 10;
+text-align: center;
+margin: 10px 15px 5px 30px;
+font-weight: bold;
+border-radius: 3px;
+
+}
+li {
+    box-shadow: 5px 7px 27px 5px #000000;
+
+}
+
+li:hover {
+  border:  1px solid  #008080;
+  background-color: #111315;
+}
+
+  a:visited {
+  color: #ffffff;
+
+  }
+
+
+            /* main */
+main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+
+.main__welcome {
+    padding-top: 25px;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: bold;
+}
+
+
+.main__welcome h1 {
+  font-size: 40px;
+  
+}
+
+            /* article */
+article {
+  box-shadow: 5px 7px 27px 5px #000000;
+  border-radius: 6px;
+  padding: 10;
+  margin: 13px;
+  align-items: center;
+  text-align: center;
+  background-color: #302423;
+}
+
+.feed_article {
+  background-image: url(wallp.jpg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Anek Malayalam', sans-serif;
+}
+.feed_article:hover{
+   border:  1px solid  #008080;
+}
+article iframe {
+  align-items: center;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  box-shadow: 5px 7px 27px 5px #000000;
+  border-radius: 4px;
+  padding: 10;
+  margin: 30px;
+  background-color: #001a1a;
+  font-family: 'Anek Malayalam', sans-serif;
+}
+
+.data__fechas {
+    box-shadow: 5px 7px 27px 5px #000000;
+    text-align: center;
+}
+.data__fechas:hover{
+    border:  1px solid  #008080;
+}
+
+.data__sponsor {
+  background-color: #040404;
+    box-shadow: 5px 7px 27px 5px #000000;
+    text-align: center;
+    align-items: flex-end;
+    padding: 15px 0px;
+}
+.data__sponsor:hover{
+    border:  1px solid  #008080;
+}
+.data__sponsor img{
+  height: 75px;
+  width: 75px;
+}
+
+        /* Galeria de imagenes */
+.galery {
+display: grid;
+grid-template-columns: 31% 31% 31%;
+
+}
+
+.galery-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  box-shadow: 5px 7px 27px 5px #000000;
+  border-radius: 4px;
+  padding: 10;
+  margin: 3px;
+  background-color: #001a1a;
+  font-family: 'Anek Malayalam', sans-serif;
+}
+.galery-card:hover{
+border: 1px solid  #008080;
+}
+.galery-card img{
+  height: 100%;
+  ;
+}
+            /* footer */
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Inconsolata";
+   background-color: #061414;
+  box-shadow: 5px 7px 27px 5px #000000;
+  text-align: right;
+  color: #222;
+}
+footer:hover{
+  border:  1px solid  #008080;
+}
+
+
+
+            /* media querrys */
+
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;  }
+  header nav {
+      width: 100%-40px;
+      margin-left: 60px;
+      }
+  .header__logo {
+      height: 40px;
+      padding: 5px 10px;}
+    iframe {
+        height: 168px;
+        width: 300px;}
+  .galery {
+    grid-template-columns: 50% 50%;
+  }
+  li { padding: 3px;
+    margin-left: 30px;
+    font-size: 15px;
+    padding: 6px 7px;
+    margin: 10px 3px;}
+  }
